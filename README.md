@@ -19,13 +19,14 @@ Many thanks,
 
 ![](graph_editor2.png)
 
-## Downlading a ready-to-use version
+## Downloading and starting a ready-to-use version of the Panama Papers DB
 
-To download a ready-to-use version of the Panama Paper database imported into OrientDB:
+To download and start a ready-to-use version of the Panama Paper database imported into OrientDB:
 
 - Download the `panama_papers.zip` archive from this link (put link here)
 - Unzip `panama_papers.zip` into the `databases` directory of your OrientDB installation
-- Start the server `ORIENTDB_HOME\bin\server.sh` (or `server.bat` in Windows)
+- Start an OrientDB server `server.sh` (or `server.bat` in Windows) from `ORIENTDB_HOME\bin\`
+- Point your browser to `localhost:2480` and connect to the `panama_papers` database using username `admin` and password `admin`
 
 ## Querying the Panama Papers DB
 
@@ -52,6 +53,8 @@ RETURN $pathelements) MAXDEPTH 4
 
 ## High-level migration steps
 
+To migrate the Panama Papers database from Neo4j (see above for a ready-to-use version):
+
 Step 1: Download and unpack the Panama Papers database
 
 ```
@@ -77,7 +80,7 @@ Step 3: Migrate the database from Neo4j to OrientDB with a command similar to th
 ./orientdb-neo4j-importer.sh -neo4jlibdir ~/santo/neo4j/neo4j-community-3.0.8/lib -neo4jdbdir ~/santo/neo4j/data/panama-papers/ICIJ_Panama_Papers/panama_data_for_neo4j/databases/panama.graphdb  -odbdir ../databases/panama_papers -i false
 ```
 
-Use your own path for `neo4jlibdir` and `neo4jdbdir`.
+In the command above, please use your own path for `neo4jlibdir` and `neo4jdbdir`.
 
 Example:
 
