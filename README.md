@@ -1,5 +1,3 @@
-**work in progress**
-
 
 # panama-papers-orientdb
 
@@ -16,8 +14,6 @@ We have imported the Panama Papers database into OrientDB using the [Neo4j to Or
 Please open an issue if you have any questions or problems
 
 Many thanks,
-
-![](graph_editor2.png)
 
 ## Downloading and starting a ready-to-use version of the Panama Papers DB
 
@@ -44,12 +40,16 @@ TRAVERSE * FROM (MATCH {class: Officer, as: o, where:(name.toLowerCase() LIKE "p
 RETURN o) MAXDEPTH 6
 ```
 
+![](graph_editor1.png)
+
 Example #2
 
 ```
 TRAVERSE * FROM (MATCH {class: Officer, as: o, where:(name LIKE "Ólöf Nordal")}
 RETURN $pathelements) MAXDEPTH 4
 ```
+
+![](graph_editor2.png)
 
 ## High-level migration steps
 
