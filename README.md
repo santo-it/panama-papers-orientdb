@@ -23,7 +23,7 @@ Many thanks,
 
 To download and start a ready-to-use version of the Panama Paper database imported into OrientDB:
 
-- Download the `panama_papers.zip` archive from this link (put link here)
+- Download the `panama_papers.zip` archive from this [link](https://www.dropbox.com/s/fmt9hjsxvulqxal/panama_papers.zip)
 - Unzip `panama_papers.zip` into the `databases` directory of your OrientDB installation
 - Start an OrientDB server `server.sh` (or `server.bat` in Windows) from `ORIENTDB_HOME\bin\`
 - Point your browser to `localhost:2480` and connect to the `panama_papers` database using username `admin` and password `admin`
