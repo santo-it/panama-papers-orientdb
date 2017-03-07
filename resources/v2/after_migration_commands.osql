@@ -1,0 +1,29 @@
+
+DROP INDEX Address.Neo4jLabelList;
+DROP INDEX Address.Neo4jNodeID;
+DROP PROPERTY Address.Neo4jLabelList;
+DROP PROPERTY Address.Neo4jNodeID;
+UPDATE Address REMOVE Neo4jLabelList;  
+UPDATE Address REMOVE Neo4jNodeID;
+
+DROP INDEX Entity.Neo4jLabelList;
+DROP INDEX Entity.Neo4jNodeID;
+DROP PROPERTY Entity.Neo4jLabelList;
+DROP PROPERTY Entity.Neo4jNodeID;
+UPDATE Entity REMOVE Neo4jLabelList;  
+UPDATE Entity REMOVE Neo4jNodeID;
+
+DROP INDEX Intermediary.Neo4jLabelList;
+DROP INDEX Intermediary.Neo4jNodeID;
+DROP PROPERTY Intermediary.Neo4jLabelList;
+DROP PROPERTY Intermediary.Neo4jNodeID;
+UPDATE Intermediary REMOVE Neo4jLabelList;  
+UPDATE Intermediary REMOVE Neo4jNodeID;
+
+DROP INDEX Officer.Neo4jLabelList;
+DROP INDEX Officer.Neo4jNodeID;
+DROP PROPERTY Officer.Neo4jLabelList;
+DROP PROPERTY Officer.Neo4jNodeID;
+UPDATE Officer REMOVE Neo4jLabelList;
+UPDATE Officer REMOVE Neo4jNodeID;
+ 

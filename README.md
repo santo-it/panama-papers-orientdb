@@ -1,7 +1,7 @@
 
 # panama-papers-orientdb
 
-![](graph_editor1.png)
+![](resources/graph_editor1.png)
 
 ## Introduction
 
@@ -40,7 +40,7 @@ TRAVERSE * FROM (MATCH {class: Officer, as: o, where:(name.toLowerCase() LIKE "p
 RETURN o) MAXDEPTH 6
 ```
 
-![](graph_editor1.png)
+![](resources/graph_editor1.png)
 
 Example #2
 
@@ -49,7 +49,7 @@ TRAVERSE * FROM (MATCH {class: Officer, as: o, where:(name LIKE "Ólöf Nordal")
 RETURN $pathelements) MAXDEPTH 4
 ```
 
-![](graph_editor2.png)
+![](resources/graph_editor2.png)
 
 ## High-level migration steps
 
@@ -161,3 +161,5 @@ Import Summary:
 
 D:\orientdb\orientdb-community-2.2.17\bin>
 ```
+
+Step 4 (optional): remove some properties and indexes created by the importer, if not necessary (set of SQL [instructions](resources/v2/after_migration_commands.osql))
